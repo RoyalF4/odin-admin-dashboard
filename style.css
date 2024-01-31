@@ -1,0 +1,20 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 150px 1fr;
+    border: 1px solid black;
+}
+
+.sidebar {
+    grid-row: span 2;
+    background-color: #1992d4;
+}
+
+main {
+    background: #e2e8f0;
+}
+
+.icon-white {
+    fill: white;
+}
