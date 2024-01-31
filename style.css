@@ -1,7 +1,11 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 250px 4fr;
     grid-template-rows: 150px 1fr;
     border: 1px solid black;
 }
@@ -9,7 +13,41 @@
 .sidebar {
     grid-row: span 2;
     background-color: #1992d4;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
 }
+
+.sidebar-heading {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-heading div{
+    font-size: 1.5rem;
+}
+
+.dashboard-menu {
+    display: grid;
+    grid-template-rows: 20px;
+    grid-auto-rows: 20px;
+    row-gap: 20px;
+}
+
+.dashboard-menu li {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.dashboard-menu {
+    padding: 30px 15px;
+}
+
+
 
 main {
     background: #e2e8f0;
