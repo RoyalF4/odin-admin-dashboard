@@ -47,6 +47,92 @@ body {
     padding: 30px 15px;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 40% 60%;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0 30px;
+}
+
+.search-bar {
+    background-color: #e2e8f0 ;
+    border: none;
+    border-radius: 12px;
+    height: 25px;
+}
+
+.profile-menu {
+    display: grid;
+    grid-template-columns: 25px 50px max-content;
+    justify-content: end;
+    align-items: center;
+    column-gap: 20px;
+    padding: 5px 100px 5px 100px;
+}
+
+.profile-menu img {
+    height: 45px;
+}
+
+.profile-menu p {
+    font-weight: bold;
+}
+
+.greeting {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.greeting img {
+    grid-row: span 2;
+    height: 55px;
+    place-self: center;
+}
+
+.greeting p:nth-child(2) {
+    align-self: end;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.greeting p:nth-child(3) {
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.header-actions {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    padding: 0 60px;
+}
+
+.header-actions > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    place-items: center;
+}
+
+button {
+    background: #1992d4;
+    border: none;
+    width: 80px;
+    padding: 10px 0;
+    border-radius: 18px;
+    color: white;
+    font-weight: bold;
+
+}
+
 
 
 main {
