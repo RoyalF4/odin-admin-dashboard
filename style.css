@@ -29,6 +29,11 @@ body {
     font-size: 1.5rem;
 }
 
+button:hover {
+    color: black;
+    border: 2px solid black;
+}
+
 .dashboard-menu {
     display: grid;
     grid-template-rows: 20px;
@@ -66,6 +71,7 @@ header {
     border: none;
     border-radius: 12px;
     height: 25px;
+    padding: 0 10px;
 }
 
 .profile-menu {
@@ -133,6 +139,13 @@ button {
 
 }
 
+button:active {
+    transform: translate(0, 1px);
+}
+
+h6:hover {
+    color: black;
+}
 
 
 main {
@@ -140,5 +153,9 @@ main {
 }
 
 .icon-white {
+    fill: white;
+}
+
+.menu-icon {
     fill: white;
 }
