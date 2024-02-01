@@ -3,11 +3,11 @@ body {
 }
 
 .container {
-    min-height: 100vh;
     display: grid;
     grid-template-columns: 250px 4fr;
     grid-template-rows: 150px 1fr;
     border: 1px solid black;
+    min-height: 100vh;
 }
 
 .sidebar {
@@ -150,6 +150,107 @@ h6:hover {
 
 main {
     background: #e2e8f0;
+    display: grid;
+    grid-template-columns: 2fr 300px;
+    grid-template-rows: 50px 400px 50px 400px 1fr;
+    box-shadow: 0 1px 5px 0 gray inset;
+}
+
+h5 {
+    font-weight: bold;
+    align-self: end;
+    padding: 0 0 0 15px;
+}
+
+.card-container {
+    grid-row: span 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin: 15px;
+    
+}
+
+.card-container > div {
+    background: white;
+    border-radius: 10px;
+    height: 250px;
+    box-shadow: 1px 1px 5px 0 gray;
+    border-left: 7px solid #f0b429;
+    display:grid;
+    grid-template-rows: 20px 1fr 40px;
+    padding: 20px;
+}
+
+.announcements,
+.trending {
+    background: white;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.card-container p {
+    color: #868686;
+    line-height: normal;
+}
+
+h4 {
+    font-weight: bold;
+    font: 1.5rem;
+}
+
+.card-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    justify-content: end;
+    gap: 20px;
+} 
+
+.announcements {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 35px 35px 0 35px;
+}
+
+.announcements p {
+    font-size: .75em;
+    color: #868686;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.announcements hr {
+    margin: 15px 0;
+    color:#868686;
+}
+
+h3 {
+    font-size: .8rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns:  80px 1fr;
+    padding: 35px;
+    place-items: center;
+}
+
+.trending img {
+    width: 50px;
+}
+
+.trending span {
+    font-size: .75rem;
+    color: #868686;
+}
+
+.trending h3 {
+    padding: 0;
 }
 
 .icon-white {
